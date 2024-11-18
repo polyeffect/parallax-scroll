@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Parallax Scroll Exam</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script/jquery-2.1.3.min.js"></script>
+    <script src="./script/jquery.easing.1.3.js"></script>
+</head>
+
+<body>
+    <div id="navigation">
+        <nav>
+            <h3>Parallax Scrolling</h3>
+            <ul>
+                <li><a href="#">section1</a></li>
+                <li><a href="#intro">section1</a></li>
+                <li><a href="#">section1</a></li>
+            </ul>
+        </nav>
+    </div>      
+
+    <header>
+        <div class="dim">
+            <h1 data-parallax='{"y":2200, "from-scroll": 0, "distance": 2200, "smoothness":0}'>Parallax Scrolling</h1>
+        </div>
+    </header>
+
+    <div id="background">
+        <div class="dim">
+            <img src="./images/img_01.png" data-parallax='{"y":-1000, "from-scroll": 600, "smoothness":5}'>
+            <img src="./images/img_02.png" data-parallax='{"y": -600, "from-scroll": 550, "smoothness":5}'>
+        </div>
+    </div>
+
+    <div id="anatomy">
+        <img src="./images/anatomy.png" data-parallax='{"y": -230, "from-scroll": 2100, "smoothness":10}'>
+    </div>
+
+    <section id="text-vertical">
+        <p data-parallax='{"x":-550, "from-scroll": 2800, "distance": 0, "smoothness":10}'>Parallax</p>
+        <p data-parallax='{"x":550, "from-scroll": 2800, "distance": 0, "smoothness":10}'>Scrolling</p>
+    </section>
+
+    <section id="text-horizontal-down">
+            <ul>
+                <li data-parallax='{"y":300, "from-scroll": 3000, "distance":0, "smoothness":10}'>A</li>
+                <li data-parallax='{"y":300, "from-scroll": 3050, "distance":0, "smoothness":10}'>B</li>
+                <li data-parallax='{"y":300, "from-scroll": 3100, "distance":0, "smoothness":10}'>C</li>
+                <li data-parallax='{"y":300, "from-scroll": 3150, "distance":0, "smoothness":10}'>D</li>
+                <li data-parallax='{"y":300, "from-scroll": 3200, "distance":0, "smoothness":10}'>E</li>
+                <li data-parallax='{"y":300, "from-scroll": 3250, "distance":0, "smoothness":10}'>F</li>
+                <li data-parallax='{"y":300, "from-scroll": 3300, "distance":0, "smoothness":10}'>G</li>
+                <li data-parallax='{"y":300, "from-scroll": 3350, "distance":0, "smoothness":10}'>H</li>
+                <li data-parallax='{"y":300, "from-scroll": 3400, "distance":0, "smoothness":10}'>I</li>
+            </ul>
+    </section>
+
+    <section id="text-horizontal-up">
+            <ul>
+                <li data-parallax='{"y":-300, "from-scroll": 3300, "distance":0, "smoothness":10}'>J</li>
+                <li data-parallax='{"y":-300, "from-scroll": 3350, "distance":0, "smoothness":10}'>K</li>
+                <li data-parallax='{"y":-300, "from-scroll": 3400, "distance":0, "smoothness":10}'>L</li>
+                <li data-parallax='{"y":-300, "from-scroll": 3450, "distance":0, "smoothness":10}'>M</li>
+                <li data-parallax='{"y":-300, "from-scroll": 3500, "distance":0, "smoothness":10}'>N</li>
+                <li data-parallax='{"y":-300, "from-scroll": 3550, "distance":0, "smoothness":10}'>O</li>
+                <li data-parallax='{"y":-300, "from-scroll": 3600, "distance":0, "smoothness":10}'>P</li>
+                <li data-parallax='{"y":-300, "from-scroll": 3650, "distance":0, "smoothness":10}'>Q</li>
+                <li data-parallax='{"y":-300, "from-scroll": 3700, "distance":0, "smoothness":10}'>R</li>
+            </ul>
+    </section>
+
+    <section id="img-vertical-scroll">
+            <img src="./images/417s-ZUtRHL._SX305_BO1,204,203,200_.jpg" data-parallax='{"x": 500, "from-scroll": 4000, "smoothness": 0}'>
+    </section>
+
+    <section id="img-vertical-trigger">
+        <img src="./images/417s-ZUtRHL._SX305_BO1,204,203,200_.jpg" data-parallax='{"x": 500, "from-scroll": 4500, "distance": 0, "smoothness": 10}'>
+    </section>
+
+    <div class="blank"></div>
+
+    <div id="background">
+            <div class="dim">
+                <h1 data-parallax='{"y":-600, "from-scroll": 5500, "distance": 300, "smoothness":0}'>END</h1>
+            </div>
+    </div>
+
+    <footer>
+        <p>Cpyroght All right reserved DMD</p>
+    </footer>
+
+    <!-- jQuery parallax scroll library -->
+    <script src="./script/jquery.parallax-scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+/* set default */
+/* linked text */
+a {
+    color: azure;
+    text-decoration: none;
+}
+a:hover {
+    color: darkcyan;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blank {
+    height: 200px;
+}
+
+/* navigation */
+#navigation {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1000;
+}
+
+nav {
+    color: azure;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* border: 1px dashed coral; */
+}
+
+nav h3 {
+    float: left;
+    padding-top: 5px;
+}
+
+nav ul {
+    float: right;
+ }
+
+nav ul li {
+    float: left;
+    padding: 9px 30px;
+}
+
+/* header */
+header {
+    background: url("./images/imprenta-de-tipo-mc3b3vil.jpg") no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+}
+
+header h1 {
+    /* position: absolute;
+    top: 70px;
+    left: 20%; */
+    text-align: center;
+    font-size: 36pt;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: lighter;
+    padding-top: 120px;
+    z-index: 8;
+    position: relative;
+}
+
+.dim {
+    width: 100%;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+#background {
+    background: url("./images/Metal_movable_type.jpg") no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+    position: relative;
+}
+#background .dim>img:nth-of-type(1) {
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    z-index: 9;
+}
+#background .dim>img:nth-of-type(2) {
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+    z-index: 9;
+}
+
+#anatomy {
+    width: 1520px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+}
+
+#anatomy img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* section */
+section {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    /* border: 1px dashed red; */
+}
+
+#text-vertical {
+    height: 300px;
+    font-size: 48pt;
+    margin-top: 200px;
+}
+
+#text-vertical>p:nth-of-type(1) {
+    position: absolute;
+    left: 550px;
+}
+
+#text-vertical>p:nth-of-type(2) {
+    position: absolute;
+    top: 72px;
+    left: 0px;
+}
+
+#text-horizontal-up li {
+    display: inline-block;
+    padding: 0 1px;
+}
+
+#text-horizontal-down {
+    height: 400px;
+}
+
+#text-horizontal-down ul {
+    font-size: 72pt;
+    position: absolute;
+    top: 0px;
+}
+
+#text-horizontal-up {
+    height: 400px;
+}
+
+#text-horizontal-up ul {
+    font-size: 72pt;
+    position: absolute;
+    top: 300px;
+}
+
+#text-horizontal-down li {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+#background h1 {
+    font-size: 36pt;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: lighter;
+    padding-top: 120px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+footer p {
+    color: azure;
+    text-align: center;
+    padding-top: 140px;
+}
