@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video and Image Sequence</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <video id="vid" autoplay muted loop>
+                <source src="video/highlight.mp4" type="video/mp4">
+            </video>
+        </header>
+
+        <div class="blank"></div>
+        
+        <h2>Image Sequence Play #1 Autoplay</h2>
+        <div>
+            <canvas width="750" height="750" id="autoplay-screen"></canvas>
+        </div>
+
+        <div class="blank"></div>
+
+        <h2>Image Sequence Play #2 Autoplay when specific Y position</h2>
+        <div>
+            <canvas width="750" height="750" id="autoplay-screen-ypos"></canvas>
+        </div>
+
+        <div class="blank"></div>
+
+        <h2>Image Sequence Play #3 Autoplay when specific Y position</h2>
+        <div data-parallax='{"y":2000,  "from-scroll":2200, "distance":2000, "smoothness":0}'>
+            <canvas width="750" height="750" id="autoplay-screen-scroll"></canvas>
+        </div>
+        
+        <div class="blank-long"></div>
+
+        <!-- javascript -->
+        <script src="script/jquery-2.1.3.min.js"></script>
+        <script src="script/jquery.easing.1.3.js"></script>
+        <script src="script/jquery.parallax-scroll.js"></script>
+        <script src="script/sequenceAutoplay.js"></script>
+        <script src="script/sequenceAutoplayYpos.js"></script>
+        <script src="script/sequenceAutoplayScroll.js"></script>
+        <!-- <script src="script/scroll.js"></script> -->
+    </body>
+</html>
